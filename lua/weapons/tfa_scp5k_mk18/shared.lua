@@ -294,7 +294,7 @@ SWEP.ForceEmptyFireOff      = false --Disables empty fire animations.  Set to fa
 
 
 SWEP.Attachments = {
-	[3] = { offset = { 0, 0 }, atts = { "att_tfa_mk18tan" }, order = 3 },
+	[3] = { offset = { 0, 0 }, atts = { "att_tfa_scp5ktan" }, order = 3 },
 }
 
 

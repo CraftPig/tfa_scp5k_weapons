@@ -10,8 +10,8 @@ SWEP.ViewModel			    = "models/weapons/tfa_scp5k/glock/v_glock.mdl"
 SWEP.ViewModelFOV			= 75		         -- This controls how big the viewmodel looks.  Less is more.
 SWEP.ViewModelFlip			= false		         -- Set this to true for CSS models, or false for everything else (with a righthanded viewmodel.)
 SWEP.UseHands               = true               --Use gmod c_arms system.
-SWEP.VMPos                  = Vector(-2.5, -3, 0.5)    --The viewmodel positional offset, constantly.  Subtract this from any other modifications to viewmodel position.
-SWEP.VMAng                  = Vector(1, -1, -10)    --The viewmodel angular offset, constantly.   Subtract this from any other modifications to viewmodel angle.
+SWEP.VMPos                  = Vector(-2.5, -4, 0.5)    --The viewmodel positional offset, constantly.  Subtract this from any other modifications to viewmodel position.
+SWEP.VMAng                  = Vector(0, -1, -10)    --The viewmodel angular offset, constantly.   Subtract this from any other modifications to viewmodel angle.
 SWEP.VMPos_Additive         = false              --Set to false for an easier time using VMPos.
 SWEP.CameraAttachmentScale  = 0
 SWEP.CameraAttachment       = 3
@@ -51,10 +51,10 @@ SWEP.SafetyAng         = Vector(-5.143, 20.809, 0)
 
 SWEP.data = {}
 SWEP.data.ironsights   = 1 --Enable Ironsights
-SWEP.Secondary.IronFOV = 95
-SWEP.IronSightsPos     = Vector(-2.4, 2.5, 2.3)
-SWEP.IronSightsAng     = Vector(0, -0.5, 0)
-SWEP.IronSightTime     = 0.125 
+SWEP.Secondary.IronFOV = 75
+SWEP.IronSightsPos     = Vector(-2.43, 2.5, 2.3)
+SWEP.IronSightsAng     = Vector(0, -0.67, 0)
+SWEP.IronSightTime     = 0.2 
 
 SWEP.InspectPos        = Vector(5.367, -12.215, -1.688)
 SWEP.InspectAng        = Vector(25, 40, 10)
@@ -284,7 +284,7 @@ SWEP.ForceEmptyFireOff      = false --Disables empty fire animations.  Set to fa
 
 
 SWEP.Attachments = {
-	[3] = { offset = { 0, 0 }, atts = { "att_tfa_glocktan" }, order = 3 },
+	[3] = { offset = { 0, 0 }, atts = { "att_tfa_scp5ktan" }, order = 3 },
 }
 
 

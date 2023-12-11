@@ -44,20 +44,20 @@ SWEP.Offset = {
 SWEP.ThirdPersonReloadDisable = false --Disable third person reload?  True disables.
 
 -------------------------- VM Positions
-SWEP.RunSightsPos      = Vector(-2.5, -6, 0.5)
-SWEP.RunSightsAng      = Vector(-20, 20, -10)
+SWEP.RunSightsPos      = Vector(-2.5, -6.5, -1.0)
+SWEP.RunSightsAng      = Vector(-3, 20.5, -20)
 SWEP.SafetyPos         = Vector(4.081, 0, -1.048)
 SWEP.SafetyAng         = Vector(-5.143, 20.809, 0)
 
 SWEP.data = {}
 SWEP.data.ironsights   = 1 --Enable Ironsights
-SWEP.Secondary.IronFOV = 95
+SWEP.Secondary.IronFOV = 75
 SWEP.IronSightsPos     = Vector(-2.3, 2.5, 1.8)
 SWEP.IronSightsAng     = Vector(0.1, -0.35, 0)
 SWEP.IronSightTime     = 0.125 
 
-SWEP.InspectPos        = Vector(5.367, -12.215, -1.688)
-SWEP.InspectAng        = Vector(25, 40, 10)
+SWEP.InspectPos        = Vector(3.3, -3.0, -1.0)
+SWEP.InspectAng        = Vector(25, 20, 0)
 
 --------------------------------------------------- Hud Elements
 SWEP.SubCategory        = "Pistols"
@@ -289,7 +289,7 @@ SWEP.ForceEmptyFireOff      = false --Disables empty fire animations.  Set to fa
 
 
 SWEP.Attachments = {
-	[3] = { offset = { 0, 0 }, atts = { "att_tfa_m9a3tan" }, order = 3 },
+	[3] = { offset = { 0, 0 }, atts = { "att_tfa_scp5ktan" }, order = 3 },
 }
 
 

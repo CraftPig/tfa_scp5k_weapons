@@ -12,8 +12,9 @@
 ---    Chapter_MP5K
 ---    Chapter_UMP45
 ---    Chapter_MP7
------- Chapter_Shotguns
+------ Chapter_Other
 ---    Chapter_M1014
+---    Chapter_M24A3
 
 ------------------------------------------------------------ Chapter_Generic
 sound.Add( {
@@ -80,7 +81,7 @@ sound.Add( {
 } )
 sound.Add( {
 	name = "Generic_ADSin",
-	channel = CHAN_ITEM,
+	channel = CHAN_BODY,
 	volume = 1.0,
 	level = 55,
 	pitch = {95,105},
@@ -94,7 +95,7 @@ sound.Add( {
 } )
 sound.Add( {
 	name = "Generic_ADSout",
-	channel = CHAN_ITEM,
+	channel = CHAN_BODY,
 	volume = 1.0,
 	level = 55,
 	pitch = {95,105},
@@ -1905,7 +1906,7 @@ sound.Add( {
  	},
 } )
 
------------------------------------------------------------- Chapter_M1014
+------------------------------------------------------------ Chapter_Other
 ------------------------------ Chapter_M1014
 --------- Fire
 sound.Add( {
@@ -2061,5 +2062,221 @@ sound.Add( {
 	pitch = {95,105},
 	sound = {
 		"weapons/tfa_scp5k/M1014/M1014_Inspect_Bolt_Forward.ogg",
+ 	},
+} )
+
+------------------------------ Chapter_M24A3
+--------- Fire
+sound.Add( {
+	name = "Weapon_m24a3_Fire",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 120,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/m24a3/fire/M24A3_Shot_00.ogg",
+		"weapons/tfa_scp5k/m24a3/fire/M24A3_Shot_01.ogg",
+		"weapons/tfa_scp5k/m24a3/fire/M24A3_Shot_02.ogg",
+		"weapons/tfa_scp5k/m24a3/fire/M24A3_Shot_03.ogg",
+		"weapons/tfa_scp5k/m24a3/fire/M24A3_Shot_04.ogg",
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_m24a3_Action",
+	channel = CHAN_ITEM,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/m24a3/M24_Action_00.ogg",
+		"weapons/tfa_scp5k/m24a3/M24_Action_01.ogg",
+		"weapons/tfa_scp5k/m24a3/M24_Action_02.ogg",
+		"weapons/tfa_scp5k/m24a3/M24_Action_03.ogg",
+		"weapons/tfa_scp5k/m24a3/M24_Action_04.ogg",
+ 	},
+} )
+
+sound.Add( {
+	name = "Weapon_m24a3_Equip",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/m24a3/M24_Equip.ogg",
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_m24a3_Unequip",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/m24a3/M24_UnEquip.ogg",
+ 	},
+} )
+--------- Reload
+sound.Add( {
+	name = "Weapon_m24a3_MagIn",
+	channel = CHAN_ITEM,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/m24a3/M24_Reload_Half_MagIn.ogg",
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_m24a3_MagOut",
+	channel = CHAN_ITEM,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/m24a3/M24_Reload_Half_Magout.ogg",
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_m24a3_MagPouch",
+	channel = CHAN_BODY,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/m24a3/M24_Reload_Half_MagPouch.ogg",
+ 	},
+} )
+--------- Reload_Empty
+sound.Add( {
+	name = "Weapon_m24a3_EmptyMagOut",
+	channel = CHAN_ITEM,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/m24a3/M24_Reload_Empty_MagOut.ogg",
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_m24a3_EmptyMagIn",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/m24a3/M24_Reload_Empty_MagIn.ogg",
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_m24a3_EmptyBolt",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/m24a3/M24_Reload_Empty_Bolt.ogg",
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_m24a3_EmptyMagPouch",
+	channel = CHAN_BODY,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/m24a3/M24_Reload_Empty_MagPouch.ogg",
+ 	},
+} )
+--------- MagCheck
+sound.Add( {
+	name = "Weapon_m24a3_MagCheckOut",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/m24a3/M24_MagCheck_MagOut_1.ogg",
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_m24a3_MagCheckIn",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/m24a3/M24_MagCheck_MagIn_1.ogg",
+ 	},
+} )
+--------- Inspect
+sound.Add( {
+	name = "Weapon_m24a3_Rotate",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/m24a3/M24_Inspect_Rotate.ogg",
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_m24a3_BoltBack",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/m24a3/M24_Inspect_Bolt_Back.ogg",
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_m24a3_BoltForward",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/m24a3/M24_Inspect_Bolt_Forward.ogg",
+ 	},
+} )
+
+------------------------------ Chapter_Pipe
+--------- Fire
+sound.Add( {
+	name = "Weapon_pipe_swing",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 60,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/pipe/Pipe_Swing_3rd_Layer_01_1E93D890.ogg",
+		"weapons/tfa_scp5k/pipe/Pipe_Swing_3rd_Layer_02_1E93D890.ogg",
+		"weapons/tfa_scp5k/pipe/Pipe_Swing_3rd_Layer_03_1E93D890.ogg",
+		"weapons/tfa_scp5k/pipe/Pipe_Swing_3rd_Layer_04_1E93D890.ogg",
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_pipe_hit",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 60,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/pipe/Hits_Pipe_Main_01_1E93D890.ogg",
+		"weapons/tfa_scp5k/pipe/Hits_Pipe_Main_02_1E93D890.ogg",
+		"weapons/tfa_scp5k/pipe/Hits_Pipe_Main_03_1E93D890.ogg",
+		"weapons/tfa_scp5k/pipe/Hits_Pipe_Main_04_1E93D890.ogg",
+		"weapons/tfa_scp5k/pipe/Hits_Pipe_Main_05_1E93D890.ogg",
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_pipe_equip",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 60,
+	pitch = {100,100},
+	sound = {
+		"weapons/tfa_scp5k/pipe/sfx_pipe_equip_1E93D890.ogg",
  	},
 } )

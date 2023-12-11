@@ -287,6 +287,9 @@ SWEP.DisableIdleAnimations  = false --Disables idle animations.  Set to false to
 SWEP.ForceEmptyFireOff      = false --Disables empty fire animations.  Set to false to enable them.
 
 
+SWEP.Attachments = {
+	[3] = { offset = { 0, 0 }, atts = { "att_tfa_scp5ktan" }, order = 3 },
+}
 
 
 

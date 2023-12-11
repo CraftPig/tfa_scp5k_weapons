@@ -10,8 +10,8 @@ SWEP.ViewModel			    = "models/weapons/tfa_scp5k/mk17/v_mk17.mdl"
 SWEP.ViewModelFOV			= 80		         -- This controls how big the viewmodel looks.  Less is more.
 SWEP.ViewModelFlip			= false		         -- Set this to true for CSS models, or false for everything else (with a righthanded viewmodel.)
 SWEP.UseHands               = true               --Use gmod c_arms system.
-SWEP.VMPos                  = Vector(-1.0, 0.5, 0.5)    --The viewmodel positional offset, constantly.  Subtract this from any other modifications to viewmodel position.
-SWEP.VMAng                  = Vector(0, -3, -5)    --The viewmodel angular offset, constantly.   Subtract this from any other modifications to viewmodel angle.
+SWEP.VMPos                  = Vector(-1.25, 0.5, 0.6)    --The viewmodel positional offset, constantly.  Subtract this from any other modifications to viewmodel position.
+SWEP.VMAng                  = Vector(-1, -2, -5)    --The viewmodel angular offset, constantly.   Subtract this from any other modifications to viewmodel angle.
 SWEP.VMPos_Additive         = false              --Set to false for an easier time using VMPos.
 SWEP.CameraAttachmentScale  = 0
 SWEP.CameraAttachment       = 3
@@ -53,8 +53,8 @@ SWEP.SafetyAng         = Vector(-5.143, 20.809, 0)
 
 SWEP.data = {}
 SWEP.data.ironsights   = 1 --Enable Ironsights
-SWEP.Secondary.IronFOV = 95
-SWEP.IronSightsPos     = Vector(-3.23, 0.5, 1.06)
+SWEP.Secondary.IronFOV = 75
+SWEP.IronSightsPos     = Vector(-3.22, -1, 1.075)
 SWEP.IronSightsAng     = Vector(0, -0.1, 0)
 SWEP.IronSightTime     = 0.125 
 
@@ -299,7 +299,7 @@ SWEP.ForceEmptyFireOff      = false --Disables empty fire animations.  Set to fa
 
 
 SWEP.Attachments = {
-	[3] = { offset = { 0, 0 }, atts = { "att_tfa_mk18tan" }, order = 3 },
+	[3] = { offset = { 0, 0 }, atts = { "att_tfa_scp5ktan" }, order = 3 },
 }
 
 DEFINE_BASECLASS(SWEP.Base)
