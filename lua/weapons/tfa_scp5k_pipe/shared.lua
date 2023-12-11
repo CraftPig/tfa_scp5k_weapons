@@ -75,7 +75,7 @@ SWEP.Primary.RPM = 1
 SWEP.AllowSprintAttack = false
 SWEP.Secondary.CanBash = false
 
-SWEP.Primary.MaxCombo = 2
+SWEP.Primary.MaxCombo = -1
 SWEP.Secondary.MaxCombo = 0
 
 

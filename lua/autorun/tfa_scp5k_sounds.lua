@@ -2,6 +2,7 @@
 ------ Chapter_Pistols
 ---    Chapter_GlockX19
 ---    Chapter_M9A3
+---    Chapter_P320
 ------ Chapter_Assault_Rifles
 ---    Chapter_ASVAL
 ---    Chapter_MK18
@@ -514,6 +515,169 @@ sound.Add( {
 	pitch = {95,105},
 	sound = {
 		"weapons/tfa_scp5k/M9A3/M9_Handling_Inspect_Bolt_Forward.ogg"
+ 	},
+} )
+
+------------------------------ Chapter_P320
+sound.Add( {
+	name = "Weapon_P320_Fire",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 120,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/P320/fire/P320_shot_v1_1.ogg",
+		"weapons/tfa_scp5k/P320/fire/P320_shot_v1_2.ogg",
+		"weapons/tfa_scp5k/P320/fire/P320_shot_v1_3.ogg",
+		"weapons/tfa_scp5k/P320/fire/P320_shot_v1_4.ogg",
+		"weapons/tfa_scp5k/P320/fire/P320_shot_v1_5.ogg",
+ 	},
+} )
+
+--------- Reload
+sound.Add( {
+	name = "Weapon_P320_MagOut",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/P320/P320_Reload_Half_MagOut.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_P320_MagIn",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/P320/P320_Reload_Half_MagIn.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_P320_MagHit",
+	channel = CHAN_ITEM,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/P320/P320_Reload_Single_MagHit.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_P320_MagPouchDown",
+	channel = CHAN_BODY,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/P320/P320_Reload_Half_MagPouch_Down.ogg",
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_P320_MagPouchUp",
+	channel = CHAN_BODY,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/P320/P320_Reload_Half_MagPouch_Up.ogg",
+ 	},
+} )
+
+
+--------- Reload_Empty
+sound.Add( {
+	name = "Weapon_P320_EmptyMagOut",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/P320/P320_Reload_Empty_MagOut.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_P320_EmptyMagIn",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/P320/P320_Reload_Empty_MagIn.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_P320_EmptyBolt",
+	channel = CHAN_ITEM,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/P320/P320_Reload_Empty_Bolt.ogg"
+ 	},
+} )
+--------- MagCheck
+sound.Add( {
+	name = "Weapon_P320_MagCheckIn",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/P320/P320_Mag_Check_In.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_P320_MagCheckOut",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/P320/P320_Mag_Check_Out.ogg"
+ 	},
+} )
+--------- Inspect
+sound.Add( {
+	name = "Weapon_P320_InspectRotate",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/P320/P320_Handling_Inspect_Rotate00.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_P320_BoltBack",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/P320/P320_Handling_Inspect_Back.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_P320_BoltForward",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/P320/P320_Handling_Inspect_Bolt_Forward.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_P320_BoltHit",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/P320/P320_Handling_Inspect_Bolt_Hit.ogg"
  	},
 } )
 

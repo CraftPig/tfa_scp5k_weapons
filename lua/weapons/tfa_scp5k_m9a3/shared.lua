@@ -86,7 +86,7 @@ SWEP.Primary.AmmoConsumption   = 1
 SWEP.DisableChambering         = false 
 
 -------------------------- Damage
-SWEP.Primary.Damage            = 45 
+SWEP.Primary.Damage            = 43 
 
 SWEP.Primary.DamageTypeHandled = true            --true will handle damagetype in base
 SWEP.Primary.DamageType        = nil             --See DMG enum. DMG_SHOCK, DMG_BURN, DMG_BULLET.  DMG_AIRBOAT opens doors.
@@ -116,7 +116,7 @@ SWEP.DisableBurstFire = true --Only auto/single?
 SWEP.OnlyBurstFire = false --No auto, only burst/single?
 
 SWEP.Primary.Range                 = -1          -- The distance the bullet can travel in source units.  Set to -1 to autodetect based on damage/rpm.
-SWEP.Primary.RangeFalloff          = 0.4           -- Set to 0.8, for example, to start falling off after 80% of the range.
+SWEP.Primary.RangeFalloff          = 0.25           -- Set to 0.8, for example, to start falling off after 80% of the range.
 SWEP.MaxPenetrationCounter         = 3           --The maximum number of ricochets.  To prevent stack overflows.
  
 -------------------------- Recoil

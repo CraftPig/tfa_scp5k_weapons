@@ -98,8 +98,8 @@ SWEP.Primary.NumShots          = 8               --The number of shots the weapo
 SWEP.Primary.Automatic         = false           -- Automatic/Semi Auto
 
 -------------------------- Fire Handling
-SWEP.Primary.RPM_Displayed         = 399         -- This is in Rounds Per Minute / RPM
-SWEP.Primary.RPM                   = 800         -- This is in Rounds Per Minute / RPM
+SWEP.Primary.RPM_Displayed         = 350         -- This is in Rounds Per Minute / RPM
+SWEP.Primary.RPM                   = 350         -- This is in Rounds Per Minute / RPM
 SWEP.Primary.DryFireDelay          = nil         --How long you have to wait after firing your last shot before a dryfire animation can play
 SWEP.Primary.PenetrationMultiplier = 1           --Change the amount of something this gun can penetrate through
 

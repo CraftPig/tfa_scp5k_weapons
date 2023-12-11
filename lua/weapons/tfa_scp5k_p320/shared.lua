@@ -52,7 +52,7 @@ SWEP.SafetyAng         = Vector(-5.143, 20.809, 0)
 SWEP.data = {}
 SWEP.data.ironsights   = 1 --Enable Ironsights
 SWEP.Secondary.IronFOV = 95
-SWEP.IronSightsPos     = Vector(-2.81, 0.5, 2.83)
+SWEP.IronSightsPos     = Vector(-2.84, 0.5, 2.83)
 SWEP.IronSightsAng     = Vector(0, 0.025, 0)
 SWEP.IronSightTime     = 0.125 
 
@@ -86,7 +86,7 @@ SWEP.Primary.AmmoConsumption   = 1
 SWEP.DisableChambering         = false 
 
 -------------------------- Damage
-SWEP.Primary.Damage            = 46 
+SWEP.Primary.Damage            = 48 
 
 SWEP.Primary.DamageTypeHandled = true            --true will handle damagetype in base
 SWEP.Primary.DamageType        = nil             --See DMG enum. DMG_SHOCK, DMG_BURN, DMG_BULLET.  DMG_AIRBOAT opens doors.
@@ -116,13 +116,13 @@ SWEP.DisableBurstFire = true --Only auto/single?
 SWEP.OnlyBurstFire = false --No auto, only burst/single?
 
 SWEP.Primary.Range                 = -1          -- The distance the bullet can travel in source units.  Set to -1 to autodetect based on damage/rpm.
-SWEP.Primary.RangeFalloff          = 0.3           -- Set to 0.8, for example, to start falling off after 80% of the range.
+SWEP.Primary.RangeFalloff          = 0.5           -- Set to 0.8, for example, to start falling off after 80% of the range.
 SWEP.MaxPenetrationCounter         = 3           --The maximum number of ricochets.  To prevent stack overflows.
  
 -------------------------- Recoil
-SWEP.Primary.KickUp                              = 0.1 -- This is the maximum upwards recoil (rise)
+SWEP.Primary.KickUp                              = 0.35 -- This is the maximum upwards recoil (rise)
 SWEP.Primary.KickDown                            = 0.05 -- This is the maximum downwards recoil (skeet)
-SWEP.Primary.KickHorizontal                      = 0.09 -- This is the maximum sideways recoil (no real term)
+SWEP.Primary.KickHorizontal                      = 0.2 -- This is the maximum sideways recoil (no real term)
 SWEP.Primary.StaticRecoilFactor                  = .075 --Amount of recoil to directly apply to EyeAngles.  Enter what fraction or percentage (in decimal form) you want.  This is also affected by a convar that defaults to 0.5.
 
 SWEP.IronRecoilMultiplier                        = 0.9        --Multiply recoil by this factor when we're in ironsights.  This is proportional, not inversely.
@@ -142,7 +142,7 @@ SWEP.ViewModelPunchYawMultiplier_IronSights      = 1 -- Default value is 1.5
 
 
 -------------------------- Spread
-SWEP.Primary.Spread                              = 0.01 --This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
+SWEP.Primary.Spread                              = 0.02 --This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
 SWEP.Primary.IronAccuracy                        = .002 -- Ironsight accuracy, should be the same for shotguns
 SWEP.Primary.SpreadMultiplierMax                 = 5 --How far the spread can expand when you shoot. Example val: 2.5
 SWEP.Primary.SpreadIncrement                     = 0.3 --What percentage of the modifier is added on, per shot.  Example val: 1/3.5
@@ -163,7 +163,7 @@ SWEP.LuaShellEffect            = "ShellEject"
 SWEP.LuaShellModel             = "models/shells/shell_9mm.mdl"
 
 --------------------------------------------------- Sounds
-SWEP.Primary.Sound             = Sound("Weapon_GLOCK_Fire")
+SWEP.Primary.Sound             = Sound("Weapon_P320_Fire")
 
 SWEP.IronInSound               = Sound("Generic_ADSin")             --Sound to play when ironsighting in?  nil for default
 SWEP.IronOutSound              = Sound("Generic_ADSout")             --Sound to play when ironsighting out?  nil for default
@@ -171,33 +171,41 @@ SWEP.IronOutSound              = Sound("Generic_ADSout")             --Sound to 
 --------------------------------------------------- Animations
 SWEP.EventTable = {
 	[ACT_VM_DRAW] = {
-		{time = 0 / 30, type = "sound", value = Sound("Weapon_MK17_Equip")},
+		{time = 0 / 30, type = "sound", value = Sound("Weapon_GLOCK_Equip")},
 		{time = 0 / 30, type = "sound", value = Sound("Generic_ClothEquip")}
 	},
 	[ACT_VM_HOLSTER] = {
-		{time = 0 / 30, type = "sound", value = Sound("Weapon_MK17_Unequip")},
+		{time = 0 / 30, type = "sound", value = Sound("Weapon_UMP_Unequip")},
 		{time = 0 / 30, type = "sound", value = Sound("Generic_ClothUnequip")}
 	},
 	[ACT_VM_RELOAD] = {
-		{time = 0 / 60, type = "sound", value = Sound("Weapon_GLOCK_MagPouchDown")},
-		{time = 0 / 60, type = "sound", value = Sound("Weapon_GLOCK_Start")},
-		{time = 0 / 60, type = "sound", value = Sound("Weapon_GLOCK_MagOut")},
-		{time = 40 / 60, type = "sound", value = Sound("Weapon_GLOCK_MagIn")},
-		{time = 70 / 60, type = "sound", value = Sound("Weapon_GLOCK_MagPouchDown")},
-		{time = 80 / 60, type = "sound", value = Sound("Weapon_GLOCK_Start")}
+	    {time = 0 / 60, type = "sound", value = Sound("Weapon_GLOCK_Plastic")},
+		{time = 0 / 60, type = "sound", value = Sound("Weapon_P320_MagPouchDown")},
+		{time = 15 / 60, type = "sound", value = Sound("Weapon_P320_MagOut")},
+		{time = 56 / 60, type = "sound", value = Sound("Weapon_P320_MagHit")},
+		{time = 65 / 60, type = "sound", value = Sound("Weapon_P320_MagIn")},
+		{time = 88 / 60, type = "sound", value = Sound("Weapon_P320_MagPouchUp")},
+		{time = 100 / 30, type = "sound", value = Sound("Generic_ClothEquip")}
 	},
 	[ACT_VM_RELOAD_EMPTY] = {
-		{time = 0 / 60, type = "sound", value = Sound("Weapon_GLOCK_Start")},
-		{time = 0 / 60, type = "sound", value = Sound("Weapon_GLOCK_EmptyMagOut")},
-		{time = 35 / 60, type = "sound", value = Sound("Weapon_GLOCK_EmptyMagPouch")},
-		{time = 55 / 60, type = "sound", value = Sound("Weapon_GLOCK_EmptyMagIn")},
-		{time = 120 / 60, type = "sound", value = Sound("Weapon_GLOCK_EmptyBolt")},
+		{time = 0 / 60, type = "sound", value = Sound("Weapon_P320_EmptyMagOut")},
+		{time = 0 / 60, type = "sound", value = Sound("Generic_ClothUnequip")},
+		{time = 25 / 60, type = "sound", value = Sound("Weapon_P320_MagPouchDown")},
+		{time = 50 / 60, type = "sound", value = Sound("Weapon_P320_EmptyMagIn")},
+		{time = 105 / 60, type = "sound", value = Sound("Weapon_P320_EmptyBolt")},
 	},
 	[ACT_VM_FIDGET] = {
-		{time = 0 / 60, type = "sound", value = Sound("Weapon_GLOCK_InspectRotate")},
-		{time = 110 / 60, type = "sound", value = Sound("Weapon_GLOCK_BoltBack")},
-		{time = 150 / 60, type = "sound", value = Sound("Weapon_GLOCK_BoltForward")},
-		{time = 173 / 60, type = "sound", value = Sound("Weapon_GLOCK_BoltHit")},
+		{time = 0 / 60, type = "sound", value = Sound("Weapon_P320_InspectRotate")},
+		{time = 160 / 60, type = "sound", value = Sound("Weapon_P320_BoltBack")},
+		{time = 250 / 60, type = "sound", value = Sound("Weapon_P320_BoltForward")},
+		{time = 280 / 60, type = "sound", value = Sound("Weapon_P320_BoltHit")},
+	},
+	[ACT_VM_MISSCENTER] = {
+		{time = 0 / 60, type = "sound", value = Sound("Weapon_P320_MagCheckOut")},
+		
+	},
+	[ACT_VM_MISSCENTER2] = {
+		{time = 16 / 60, type = "sound", value = Sound("Weapon_P320_MagCheckIn")},		
 	},
 }
 
