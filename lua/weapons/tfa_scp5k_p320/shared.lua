@@ -23,7 +23,7 @@ SWEP.ViewModelBoneMods = {
 }
 
 --------------------------------------------------- Worldmodel
-SWEP.WorldModel			    = "models/weapons/tfa_scp5k/glock/w_glock.mdl" 
+SWEP.WorldModel			    = "models/weapons/tfa_scp5k/p320/w_p320.mdl" 
 SWEP.Bodygroups_W = {
 
 }
@@ -120,9 +120,9 @@ SWEP.Primary.RangeFalloff          = 0.5           -- Set to 0.8, for example, t
 SWEP.MaxPenetrationCounter         = 3           --The maximum number of ricochets.  To prevent stack overflows.
  
 -------------------------- Recoil
-SWEP.Primary.KickUp                              = 0.35 -- This is the maximum upwards recoil (rise)
+SWEP.Primary.KickUp                              = 0.3 -- This is the maximum upwards recoil (rise)
 SWEP.Primary.KickDown                            = 0.05 -- This is the maximum downwards recoil (skeet)
-SWEP.Primary.KickHorizontal                      = 0.2 -- This is the maximum sideways recoil (no real term)
+SWEP.Primary.KickHorizontal                      = 0.13 -- This is the maximum sideways recoil (no real term)
 SWEP.Primary.StaticRecoilFactor                  = .075 --Amount of recoil to directly apply to EyeAngles.  Enter what fraction or percentage (in decimal form) you want.  This is also affected by a convar that defaults to 0.5.
 
 SWEP.IronRecoilMultiplier                        = 0.9        --Multiply recoil by this factor when we're in ironsights.  This is proportional, not inversely.

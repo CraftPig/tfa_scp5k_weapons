@@ -46,15 +46,15 @@ SWEP.ThirdPersonReloadDisable = false --Disable third person reload?  True disab
 -------------------------- VM Positions
 --SWEP.RunSightsPos      = Vector(-1, 0, 2)
 --SWEP.RunSightsAng      = Vector(-30, 40, 0)
-SWEP.RunSightsPos      = Vector(3, 1.5, 4)
-SWEP.RunSightsAng      = Vector(-40, 30, 0)
+SWEP.RunSightsPos      = Vector(-5, -4, -1)
+SWEP.RunSightsAng      = Vector(-15, 35, -30)
 SWEP.SafetyPos         = Vector(4.081, 0, -1.048)
 SWEP.SafetyAng         = Vector(-5.143, 20.809, 0)
 
 SWEP.data = {}
 SWEP.data.ironsights   = 1 --Enable Ironsights
 SWEP.Secondary.IronFOV = 75
-SWEP.IronSightsPos     = Vector(-3.22, -1, 1.075)
+SWEP.IronSightsPos     = Vector(-3.22, 0, 1.075)
 SWEP.IronSightsAng     = Vector(0, -0.1, 0)
 SWEP.IronSightTime     = 0.125 
 

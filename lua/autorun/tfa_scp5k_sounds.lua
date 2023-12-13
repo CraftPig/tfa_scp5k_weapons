@@ -7,6 +7,8 @@
 ---    Chapter_ASVAL
 ---    Chapter_MK18
 ---    Chapter_MK17
+---    Chapter_AK74M
+---    Chapter_AK103
 ------ Chapter_Sub_Machine_Guns
 ---    Chapter_MP5
 ---    Chapter_MP5SD
@@ -1039,6 +1041,384 @@ sound.Add( {
 	pitch = {95,105},
 	sound = {
 		"weapons/tfa_scp5k/mk18/MK18_Inspect_Bolt_Forward.ogg"
+ 	},
+} )
+
+------------------------------ Chapter_AK74M
+sound.Add( {
+	name = "Weapon_AK74M_Fire",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 120,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK74M/fire/AK556_Shot_1.ogg",
+		"weapons/tfa_scp5k/AK74M/fire/AK556_Shot_2.ogg",
+		"weapons/tfa_scp5k/AK74M/fire/AK556_Shot_3.ogg",
+		"weapons/tfa_scp5k/AK74M/fire/AK556_Shot_4.ogg",
+		"weapons/tfa_scp5k/AK74M/fire/AK556_Shot_5.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AK74M_Fireselector",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK74M/FireSelector_AK74_1.ogg",
+		"weapons/tfa_scp5k/AK74M/FireSelector_AK74_2.ogg",
+		"weapons/tfa_scp5k/AK74M/FireSelector_AK74_3.ogg",
+		"weapons/tfa_scp5k/AK74M/FireSelector_AK74_4.ogg",
+		"weapons/tfa_scp5k/AK74M/FireSelector_AK74_5.ogg",
+		"weapons/tfa_scp5k/AK74M/FireSelector_AK74_6.ogg",
+		"weapons/tfa_scp5k/AK74M/FireSelector_AK74_7.ogg",
+ 	},
+} )
+--------- Reload
+sound.Add( {
+	name = "Weapon_AK74M_MagOut",
+	channel = CHAN_ITEM,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK74M/AK74_Reload_Half_MagOut.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AK74M_MagIn",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK74M/AK74_Reload_Half_MagIn.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AK74M_MagStart",
+	channel = CHAN_ITEM,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK74M/AK74_Reload_Half_Start.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AK74M_MagPouchDown",
+	channel = CHAN_BODY,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK74M/AK74_Reload_Half_MagPouch_Down00.ogg",
+		"weapons/tfa_scp5k/AK74M/AK74_Reload_Half_MagPouch_Down01.ogg",
+		"weapons/tfa_scp5k/AK74M/AK74_Reload_Half_MagPouch_Down02.ogg",
+		"weapons/tfa_scp5k/AK74M/AK74_Reload_Half_MagPouch_Down03.ogg",
+		"weapons/tfa_scp5k/AK74M/AK74_Reload_Half_MagPouch_Down04.ogg",
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AK74M_MagPouchUp",
+	channel = CHAN_BODY,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK74M/AK74_Reload_Half_MagPouch_Up00.ogg",
+		"weapons/tfa_scp5k/AK74M/AK74_Reload_Half_MagPouch_Up01.ogg",
+		"weapons/tfa_scp5k/AK74M/AK74_Reload_Half_MagPouch_Up02.ogg",
+		"weapons/tfa_scp5k/AK74M/AK74_Reload_Half_MagPouch_Up03.ogg",
+		"weapons/tfa_scp5k/AK74M/AK74_Reload_Half_MagPouch_Up04.ogg",
+ 	},
+} )
+--------- Reload_Empty
+sound.Add( {
+	name = "Weapon_AK74M_EmptyStart",
+	channel = CHAN_ITEM,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK74M/AK74_Reload_Empty_Start.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AK74M_EmptyMagOut",
+	channel = CHAN_ITEM,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK74M/AK74_Reload_Empty_MagOut.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AK74M_EmptyMagIn",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK74M/AK74_Reload_Empty_MagIn.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AK74M_EmptyBolt",
+	channel = CHAN_ITEM,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK74M/AK74_Reload_Empty_Bolt.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AK74M_EmptyMagPouchDown",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK74M/AK74_Reload_Empty_MagPouch00.ogg",
+		"weapons/tfa_scp5k/AK74M/AK74_Reload_Empty_MagPouch01.ogg",
+		"weapons/tfa_scp5k/AK74M/AK74_Reload_Empty_MagPouch02.ogg",
+		"weapons/tfa_scp5k/AK74M/AK74_Reload_Empty_MagPouch03.ogg",
+		"weapons/tfa_scp5k/AK74M/AK74_Reload_Empty_MagPouch04.ogg",
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AK74M_EmptyMagPouchUp",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK74M/AK74_Reload_Empty_MagPouch_Up00.ogg"
+ 	},
+} )
+--------- MagCheck
+sound.Add( {
+	name = "Weapon_AK74M_MagCheckOut",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK74M/AK74_MagCheck_MagOut.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AK74M_MagCheckIn",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK74M/AK74_MagCheck_MagIn.ogg"
+ 	},
+} )
+--------- Inspect
+sound.Add( {
+	name = "Weapon_AK74M_InspectRotate",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK74M/AK74_Inspect_Rotate.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AK74M_BoltBack",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK74M/AK74_Inspect_Bolt_Back.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AK74M_BoltForward",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK74M/AK74_Inspect_Bolt_Forward.ogg"
+ 	},
+} )
+
+------------------------------ Chapter_AK103
+sound.Add( {
+	name = "Weapon_AK103_Fire",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 120,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK103/fire/akv3_shot_test_pr1nce_1.ogg",
+		"weapons/tfa_scp5k/AK103/fire/akv3_shot_test_pr1nce_2.ogg",
+		"weapons/tfa_scp5k/AK103/fire/akv3_shot_test_pr1nce_3.ogg",
+		"weapons/tfa_scp5k/AK103/fire/akv3_shot_test_pr1nce_4.ogg",
+		"weapons/tfa_scp5k/AK103/fire/akv3_shot_test_pr1nce_5.ogg",
+ 	},
+} )
+--------- Reload
+sound.Add( {
+	name = "Weapon_AK103_MagOut",
+	channel = CHAN_ITEM,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK103/AK103_Reload_Half_MagOut.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AK103_MagIn",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK103/AK103_Reload_Half_MagIn.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AK103_MagStart",
+	channel = CHAN_ITEM,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK103/AK103_Reload_Half_Start.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AK103_MagPouchDown",
+	channel = CHAN_BODY,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK103/AK103_Reload_Half_MagPouch_Down00.ogg",
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AK103_MagPouchUp",
+	channel = CHAN_BODY,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK103/AK103_Reload_Half_MagPouch_Up00.ogg",
+ 	},
+} )
+--------- Reload_Empty
+sound.Add( {
+	name = "Weapon_AK103_EmptyStart",
+	channel = CHAN_ITEM,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK103/AK103_Reload_Empty_Start.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AK103_EmptyMagOut",
+	channel = CHAN_ITEM,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK103/AK103_Reload_Empty_MagOut.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AK103_EmptyMagIn",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK103/AK103_Reload_Empty_MagIn.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AK103_EmptyBolt",
+	channel = CHAN_ITEM,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK103/AK103_Reload_Empty_Bolt.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AK103_EmptyMagPouchUp",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK103/AK103_Reload_Empty_MagPouch_Up00.ogg"
+ 	},
+} )
+--------- MagCheck
+sound.Add( {
+	name = "Weapon_AK103_MagCheckOut",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK103/AK103_MagCheck_MagOut.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AK103_MagCheckIn",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK103/AK103_MagCheck_MagIn.ogg"
+ 	},
+} )
+--------- Inspect
+sound.Add( {
+	name = "Weapon_AK103_InspectRotate",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK103/AK103_Inspect_Rotate.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AK103_BoltBack",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK103/AK103_Inspect_Bolt_Back.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AK103_BoltForward",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AK103/AK103_Inspect_Bolt_Forward.ogg"
  	},
 } )
 

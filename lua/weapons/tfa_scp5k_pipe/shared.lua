@@ -15,7 +15,7 @@ SWEP.DrawCrosshair = true
 SWEP.UseHands = true
 
 --------------------------------------------------- Worldmodel
-SWEP.WorldModel = "models/weapons/tfa_scp5k/glock/w_glock.mdl" 
+SWEP.WorldModel = "models/weapons/tfa_scp5k/pipe/w_pipe.mdl" 
 SWEP.HoldType = "melee"
 
 SWEP.Offset = {
