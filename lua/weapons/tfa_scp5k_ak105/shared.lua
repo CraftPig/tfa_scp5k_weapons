@@ -23,7 +23,7 @@ SWEP.ViewModelBoneMods = {
 }
 
 --------------------------------------------------- Worldmodel
-SWEP.WorldModel			    = "models/weapons/tfa_scp5k/mk18/w_mk18.mdl" 
+SWEP.WorldModel			    = "models/weapons/tfa_scp5k/ak74m/w_ak74m.mdl" 
 SWEP.Bodygroups_W = {
 
 }
