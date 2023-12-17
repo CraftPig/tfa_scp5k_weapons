@@ -145,7 +145,7 @@ SWEP.ViewModelPunchYawMultiplier_IronSights      = 1 -- Default value is 1.5
 SWEP.Primary.Spread                              = 0.015 --This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
 SWEP.Primary.IronAccuracy                        = .002 -- Ironsight accuracy, should be the same for shotguns
 SWEP.Primary.SpreadMultiplierMax                 = 5 --How far the spread can expand when you shoot. Example val: 2.5
-SWEP.Primary.SpreadIncrement                     = 0.3 --What percentage of the modifier is added on, per shot.  Example val: 1/3.5
+SWEP.Primary.SpreadIncrement                     = 0.35 --What percentage of the modifier is added on, per shot.  Example val: 1/3.5
 SWEP.Primary.SpreadRecovery                      = 2 --How much the spread recovers, per second. Example val: 3
 
 -------------------------- Handling
@@ -278,7 +278,7 @@ SWEP.CustomizeAnimation = {
 }
 
 
-SWEP.ForceDryFireOff        = true  --Disables dryfire.  Set to false to enable them.
+SWEP.ForceDryFireOff        = false  --Disables dryfire.  Set to false to enable them.
 SWEP.DisableIdleAnimations  = false --Disables idle animations.  Set to false to enable them.
 SWEP.ForceEmptyFireOff      = false --Disables empty fire animations.  Set to false to enable them.
 

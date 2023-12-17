@@ -3,10 +3,13 @@
 ---    Chapter_GlockX19
 ---    Chapter_M9A3
 ---    Chapter_P320
+---    Chapter_1911
+---    Chapter_FiveSeveN
 ------ Chapter_Assault_Rifles
 ---    Chapter_ASVAL
 ---    Chapter_MK18
 ---    Chapter_MK17
+---    Chapter_SA58
 ---    Chapter_AK74M
 ---    Chapter_AK103
 ------ Chapter_Sub_Machine_Guns
@@ -17,6 +20,7 @@
 ---    Chapter_MP7
 ------ Chapter_Other
 ---    Chapter_M1014
+---    Chapter_Mossberg590
 ---    Chapter_M24A3
 
 ------------------------------------------------------------ Chapter_Generic
@@ -680,6 +684,374 @@ sound.Add( {
 	pitch = {95,105},
 	sound = {
 		"weapons/tfa_scp5k/P320/P320_Handling_Inspect_Bolt_Hit.ogg"
+ 	},
+} )
+
+------------------------------ Chapter_1911
+sound.Add( {
+	name = "Weapon_1911_Fire",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 120,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/1911/fire/m1911_shot_v2_1.ogg",
+		"weapons/tfa_scp5k/1911/fire/m1911_shot_v2_2.ogg",
+		"weapons/tfa_scp5k/1911/fire/m1911_shot_v2_3.ogg",
+		"weapons/tfa_scp5k/1911/fire/m1911_shot_v2_4.ogg",
+		"weapons/tfa_scp5k/1911/fire/m1911_shot_v2_5.ogg",
+ 	},
+} )
+
+sound.Add( {
+	name = "Weapon_1911_Equip",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/1911/M1911_Equip.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_1911_Unequip",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/1911/M1911_Unequip.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_1911_Dryfire",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/1911/1911_Dryfire.ogg"
+ 	},
+} )
+
+--------- Reload
+sound.Add( {
+	name = "Weapon_1911_Start",
+	channel = CHAN_ITEM,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/1911/M1911_Reload_Half_Start.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_1911_MagOut",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/1911/M1911_Reload_Half_MagOut.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_1911_MagIn",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/1911/M1911_Reload_Half_MagIn.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_1911_HandlingBarrel",
+	channel = CHAN_ITEM,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/1911/M1911_Reload_Half_HandlingBarrel.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_1911_MagPouchDown",
+	channel = CHAN_BODY,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/1911/M1911_Reload_Half_MagPouch_Down00.ogg",
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_1911_MagPouchUp",
+	channel = CHAN_BODY,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/1911/M1911_Reload_Half_MagPouch_Up.ogg",
+ 	},
+} )
+
+
+--------- Reload_Empty
+sound.Add( {
+	name = "Weapon_1911_EmptyMagOut",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/1911/M1911_Reload_Empty_MagOut.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_1911_EmptyMagIn",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/1911/M1911_Reload_Empty_MagIn.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_1911_EmptyBolt",
+	channel = CHAN_ITEM,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/1911/M1911_Reload_Empty_Bolt.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_1911_EmptyMagPouchDown",
+	channel = CHAN_ITEM,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/1911/M1911_Reload_Empty_MagPouch_Down00.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_1911_EmptyMagPouchUp",
+	channel = CHAN_ITEM,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/1911/M1911_Reload_Empty_MagPouch_Up00.ogg"
+ 	},
+} )
+
+--------- MagCheck
+sound.Add( {
+	name = "Weapon_1911_MagCheckIn",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/1911/M1911_MagCheck_MagIn.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_1911_MagCheckOut",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/1911/M1911_MagCheck_MagOut.ogg"
+ 	},
+} )
+--------- Inspect
+sound.Add( {
+	name = "Weapon_1911_InspectRotate",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/1911/M1911_Inspect_Rotate.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_1911_BoltBack",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/1911/M1911_Inspect_Bolt_Back.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_1911_BoltForward",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/1911/M1911_Inspect_Bolt_Forward.ogg"
+ 	},
+} )
+
+------------------------------ Chapter_FiveSeveN
+sound.Add( {
+	name = "Weapon_FiveSeveN_Fire",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 120,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/FiveSeveN/fire/5.7_shot_v5_1.ogg",
+		"weapons/tfa_scp5k/FiveSeveN/fire/5.7_shot_v5_2.ogg",
+		"weapons/tfa_scp5k/FiveSeveN/fire/5.7_shot_v5_3.ogg",
+		"weapons/tfa_scp5k/FiveSeveN/fire/5.7_shot_v5_4.ogg",
+		"weapons/tfa_scp5k/FiveSeveN/fire/5.7_shot_v5_5.ogg",
+ 	},
+} )
+
+--------- Reload
+sound.Add( {
+	name = "Weapon_FiveSeveN_MagOut",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/FiveSeveN/5.7_Reload_Half_MagOut.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_FiveSeveN_MagIn",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/FiveSeveN/5.7_Reload_Half_MagIn.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_FiveSeveN_MagPouchDown",
+	channel = CHAN_BODY,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/FiveSeveN/5.7_Reload_Half_MagPouch_Down.ogg",
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_FiveSeveN_MagPouchUp",
+	channel = CHAN_BODY,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/FiveSeveN/5.7_Reload_Half_MagPouch_Up.ogg",
+ 	},
+} )
+
+--------- Reload_Empty
+sound.Add( {
+	name = "Weapon_FiveSeveN_EmptyMagOut",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/FiveSeveN/5.7_Reload_Empty_MagOut.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_FiveSeveN_EmptyMagIn",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/FiveSeveN/5.7_Reload_Empty_MagIn.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_FiveSeveN_EmptyBolt",
+	channel = CHAN_ITEM,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/FiveSeveN/5.7_Reload_Empty_Bolt.ogg"
+ 	},
+} )
+
+--------- MagCheck
+sound.Add( {
+	name = "Weapon_FiveSeveN_MagCheckIn",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/FiveSeveN/5.7_Mag_Check_In.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_FiveSeveN_MagCheckOut",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/FiveSeveN/5.7_Mag_Check_Out.ogg"
+ 	},
+} )
+--------- Inspect
+sound.Add( {
+	name = "Weapon_FiveSeveN_InspectRotate",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/FiveSeveN/5.7_Handling_Inspect_Rotate00.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_FiveSeveN_BoltBack",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/FiveSeveN/5.7_Handling_Inspect_Bolt_Back.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_FiveSeveN_BoltForward",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/FiveSeveN/5.7_Handling_Inspect_Bolt_Forward.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_FiveSeveN_BoltHit",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/FiveSeveN/5.7_Handling_Inspect_Bolt_Hit.ogg"
  	},
 } )
 
@@ -1599,6 +1971,186 @@ sound.Add( {
 	pitch = {95,105},
 	sound = {
 		"weapons/tfa_scp5k/mk17/MK17_Handling_Inspect_Rotate.ogg"
+ 	},
+} )
+
+------------------------------ Chapter_SA58
+sound.Add( {
+	name = "Weapon_SA58_Fire",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 120,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/sa58/fire/SA58_SHOT_00.ogg",
+		"weapons/tfa_scp5k/sa58/fire/SA58_SHOT_01.ogg",
+		"weapons/tfa_scp5k/sa58/fire/SA58_SHOT_02.ogg",
+		"weapons/tfa_scp5k/sa58/fire/SA58_SHOT_03.ogg",
+		"weapons/tfa_scp5k/sa58/fire/SA58_SHOT_04.ogg"
+ 	},
+} )
+--------- Reload
+sound.Add( {
+	name = "Weapon_SA58_MagOut",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/sa58/SA58_Reload_Half_MagOut.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_SA58_MagIn",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/sa58/SA58_Reload_Half_MagIn.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_SA58_MagPouchDown",
+	channel = CHAN_BODY,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/sa58/SA58_Reload_Half_MagPouch_Down00.ogg",
+		"weapons/tfa_scp5k/sa58/SA58_Reload_Half_MagPouch_Down01.ogg",
+		"weapons/tfa_scp5k/sa58/SA58_Reload_Half_MagPouch_Down02.ogg",
+		"weapons/tfa_scp5k/sa58/SA58_Reload_Half_MagPouch_Down03.ogg",
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_SA58_MagPouchUp",
+	channel = CHAN_BODY,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/sa58/SA58_Reload_Half_MagPouch_Up00.ogg",
+		"weapons/tfa_scp5k/sa58/SA58_Reload_Half_MagPouch_Up01.ogg",
+		"weapons/tfa_scp5k/sa58/SA58_Reload_Half_MagPouch_Up02.ogg",
+		"weapons/tfa_scp5k/sa58/SA58_Reload_Half_MagPouch_Up03.ogg",
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_SA58_Start",
+	channel = CHAN_ITEM,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/sa58/SA58_Reload_Half_Start.ogg"
+ 	},
+} )
+--------- Reload_Empty
+sound.Add( {
+	name = "Weapon_SA58_EmptyMagOut",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/sa58/SA58_Reload_Empty_MagOut.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_SA58_EmptyMagIn",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/sa58/SA58_Reload_Empty_MagIn.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_SA58_EmptyMagPouch",
+	channel = CHAN_ITEM,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/sa58/SA58_Reload_Empty_MagPouch_Up00.ogg",
+		"weapons/tfa_scp5k/sa58/SA58_Reload_Empty_MagPouch_Up01.ogg",
+		"weapons/tfa_scp5k/sa58/SA58_Reload_Empty_MagPouch_Up02.ogg",
+		"weapons/tfa_scp5k/sa58/SA58_Reload_Empty_MagPouch_Up03.ogg",
+		"weapons/tfa_scp5k/sa58/SA58_Reload_Empty_MagPouch_Up04.ogg",
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_SA58_EmptyBolt",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/sa58/SA58_Reload_Empty_Bolt.ogg"
+ 	},
+} )
+--------- Mag_Check
+sound.Add( {
+	name = "Weapon_SA58_MagCheckIn",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/sa58/SA58_MagCheck_MagIn.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_SA58_MagCheckOut",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/sa58/SA58_MagCheck_MagOut.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_SA58_MagCheckThrow",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/sa58/SA58_MagCheck_Throw.ogg"
+ 	},
+} )
+--------- Inspect
+sound.Add( {
+	name = "Weapon_SA58_Rotate",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/sa58/Sa58_Inspect_Rotate.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_SA58_BoltForward",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/sa58/Sa58_Inspect_Bolt_Forward.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_SA58_BoltBack",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/sa58/Sa58_Inspect_Bolt_Back.ogg"
  	},
 } )
 
@@ -2606,6 +3158,173 @@ sound.Add( {
 	pitch = {95,105},
 	sound = {
 		"weapons/tfa_scp5k/M1014/M1014_Inspect_Bolt_Forward.ogg",
+ 	},
+} )
+
+------------------------------ Chapter_Mossberg590
+--------- Fire
+sound.Add( {
+	name = "Weapon_Mossberg590_Fire",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 120,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/Mossberg590/fire/M590_shot_1.ogg",
+		"weapons/tfa_scp5k/Mossberg590/fire/M590_shot_2.ogg",
+		"weapons/tfa_scp5k/Mossberg590/fire/M590_shot_3.ogg",
+		"weapons/tfa_scp5k/Mossberg590/fire/M590_shot_4.ogg",
+		"weapons/tfa_scp5k/Mossberg590/fire/M590_shot_5.ogg",
+ 	},
+} )
+
+sound.Add( {
+	name = "Weapon_Mossberg590_Equip",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/Mossberg590/Mossberg590_Equip.ogg",
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_Mossberg590_Unequip",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/Mossberg590/Mossberg590_UnEquip.ogg",
+ 	},
+} )
+--------- Reload
+sound.Add( {
+	name = "Weapon_Mossberg590_BulletIn",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/Mossberg590/Mossberg590_Reload_Bullet_Insert00.ogg",
+		"weapons/tfa_scp5k/Mossberg590/Mossberg590_Reload_Bullet_Insert01.ogg",
+		"weapons/tfa_scp5k/Mossberg590/Mossberg590_Reload_Bullet_Insert02.ogg",
+		"weapons/tfa_scp5k/Mossberg590/Mossberg590_Reload_Bullet_Insert03.ogg",
+		"weapons/tfa_scp5k/Mossberg590/Mossberg590_Reload_Bullet_Insert04.ogg",
+		"weapons/tfa_scp5k/Mossberg590/Mossberg590_Reload_Bullet_Insert05.ogg",
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_Mossberg590_Action",
+	channel = CHAN_ITEM,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/Mossberg590/Mossberg590_Shot_Pump00.ogg",
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_Mossberg590_ReloadStart",
+	channel = CHAN_ITEM,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/Mossberg590/Mossberg590_Reload_Start.ogg",
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_Mossberg590_ReloadEnd",
+	channel = CHAN_ITEM,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/Mossberg590/Mossberg590_Reload_Half_End.ogg",
+ 	},
+} )
+--------- Reload_Empty
+sound.Add( {
+	name = "Weapon_Mossberg590_EmptyBulletIn",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/Mossberg590/M590_Reload_Empty_Start_BulletIn.ogg",
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_Mossberg590_EmptyBoltBack",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/Mossberg590/M590_Reload_Empty_Start_Bolt_Back.ogg",
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_Mossberg590_EmptyBoltForward",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/Mossberg590/M590_Reload_Empty_Start_Bolt_Forward.ogg",
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_Mossberg590_EmptyMagPouch",
+	channel = CHAN_ITEM,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/Mossberg590/M590_Reload_Empty_MagPouch_00.ogg",
+ 	},
+} )
+--------- MagCheck
+sound.Add( {
+	name = "Weapon_Mossberg590_MagCheck",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/Mossberg590/Mossberg590_MagCheck.ogg",
+ 	},
+} )
+--------- Inspect
+sound.Add( {
+	name = "Weapon_Mossberg590_Rotate",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/Mossberg590/Mossberg590_Inspect_Rotate.ogg",
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_Mossberg590_BoltBack",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/Mossberg590/Mossberg590_Inspect_Bolt_Back.ogg",
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_Mossberg590_BoltForward",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/Mossberg590/Mossberg590_Inspect_Bolt_Forward.ogg",
  	},
 } )
 

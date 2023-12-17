@@ -62,7 +62,7 @@ SWEP.InspectAng        = Vector(25, 20, 0)
 --------------------------------------------------- Hud Elements
 SWEP.SubCategory        = "Pistols"
 SWEP.PrintName			= "P320"		         -- Weapon name (Shown on HUD)
-SWEP.Manufacturer		= "Glock Ges.m.b.H."
+SWEP.Manufacturer		= "United States"
 SWEP.Author				= "Craft_Pig"
 SWEP.Contact			= ""
 SWEP.Purpose			= "" 

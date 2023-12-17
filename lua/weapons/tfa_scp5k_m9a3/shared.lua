@@ -120,7 +120,7 @@ SWEP.Primary.RangeFalloff          = 0.25           -- Set to 0.8, for example, 
 SWEP.MaxPenetrationCounter         = 3           --The maximum number of ricochets.  To prevent stack overflows.
  
 -------------------------- Recoil
-SWEP.Primary.KickUp                              = 0.05 -- This is the maximum upwards recoil (rise)
+SWEP.Primary.KickUp                              = 0.035 -- This is the maximum upwards recoil (rise)
 SWEP.Primary.KickDown                            = 0.05 -- This is the maximum downwards recoil (skeet)
 SWEP.Primary.KickHorizontal                      = 0.025 -- This is the maximum sideways recoil (no real term)
 SWEP.Primary.StaticRecoilFactor                  = .075 --Amount of recoil to directly apply to EyeAngles.  Enter what fraction or percentage (in decimal form) you want.  This is also affected by a convar that defaults to 0.5.
