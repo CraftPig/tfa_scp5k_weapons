@@ -6,12 +6,12 @@
     "$bumpmap" "models\weapons\tfa_scp5k\mp5\MI_MP5_n"
     "$phongexponenttexture" "models\weapons\tfa_scp5k\mp5\MI_MP5_e"
 
-    "$color2" "[0.8 0.8 0.8]"
+    "$color2" "[0.9 0.9 0.9]"
     "$blendtintbybasealpha" "1"
 
     "$phong" "1"
     "$phongboost" "1"
-    "$phongfresnelranges" "[1 0.5 0]"
+    "$phongfresnelranges" "[0.1 0.5 1]"
     "$phongalbedotint" "0"
 
     //rimlight doesn't properly show in hlmv, make sure you're changing these values in game
@@ -24,15 +24,4 @@
     "$envmapfresnel" "1"
     "$envmap" "env_cubemap"
     "$envmaptint" "[0.2 0.2 0.2]"
-
-    //remove this if viewing outside of MWB
-    "Proxies"
-    {
-        "MwEnvMapTint"
-        {
-            "specularity" "0.5"             //0.25, 0.5, 0.75, 1
-            "min" "0"
-            "max" "0.2"                       //change this if too bright in game
-        }
-    }
 }

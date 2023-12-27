@@ -13,6 +13,7 @@
 ---    Chapter_AK74M
 ---    Chapter_AK103
 ---    Chapter_TavorX95
+---    Chapter_AUG
 ------ Chapter_Sub_Machine_Guns
 ---    Chapter_P90
 ---    Chapter_MP5
@@ -2006,6 +2007,157 @@ sound.Add( {
 	pitch = {95,105},
 	sound = {
 		"weapons/tfa_scp5k/TavorX95/Tavor_Inspect_Bolt_Forward.ogg"
+ 	},
+} )
+
+------------------------------ Chapter_AUG
+sound.Add( {
+	name = "Weapon_AUG_Fire",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 120,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AUG/fire/AUG_shot_1.ogg",
+		"weapons/tfa_scp5k/AUG/fire/AUG_shot_2.ogg",
+		"weapons/tfa_scp5k/AUG/fire/AUG_shot_3.ogg",
+		"weapons/tfa_scp5k/AUG/fire/AUG_shot_4.ogg",
+		"weapons/tfa_scp5k/AUG/fire/AUG_shot_5.ogg",
+ 	},
+} )
+
+--------- Reload
+sound.Add( {
+	name = "Weapon_AUG_ReloadMagSlap",
+	channel = CHAN_ITEM,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AUG/AUG_Reload_Half_MagSlap.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AUG_MagOut",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AUG/AUG_Reload_Half_MagOut.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AUG_MagIn",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AUG/AUG_Reload_Half_MagIn.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AUG_MagPouchDown",
+	channel = CHAN_BODY,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AUG/AUG_Reload_Half_MagPouch.ogg",
+ 	},
+} )
+--------- Reload_Empty
+sound.Add( {
+	name = "Weapon_AUG_EmptyMagOut",
+	channel = CHAN_BODY,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AUG/AUG_Reload_Empty_MagOut.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AUG_EmptyMagIn",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AUG/AUG_Reload_Empty_MagIn.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AUG_EmptyBoltBack",
+	channel = CHAN_ITEM,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AUG/AUG_Reload_Empty_Bolt_Back.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AUG_EmptyBolt",
+	channel = CHAN_ITEM,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AUG/AUG_Reload_Empty_Bolt_Slap.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AUG_EmptyMagPouchUp",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AUG/AUG_Reload_Empty_MagPouch.ogg"
+ 	},
+} )
+--------- MagCheck
+sound.Add( {
+	name = "Weapon_AUG_MagCheckOut",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AUG/AUG_MagCheck_MagOut.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AUG_MagCheckIn",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AUG/AUG_MagCheck_MagIn.ogg"
+ 	},
+} )
+--------- Inspect
+sound.Add( {
+	name = "Weapon_AUG_InspectRotate",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AUG/AUG_Inspect_Rotate.ogg"
+ 	},
+} )
+sound.Add( {
+	name = "Weapon_AUG_BoltBack",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 55,
+	pitch = {95,105},
+	sound = {
+		"weapons/tfa_scp5k/AUG/AUG_Inspect_Bolt.ogg"
  	},
 } )
 

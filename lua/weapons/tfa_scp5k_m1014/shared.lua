@@ -51,8 +51,8 @@ SWEP.SafetyAng         = Vector(-5.143, 20.809, 0)
 
 SWEP.data = {}
 SWEP.data.ironsights   = 1 --Enable Ironsights
-SWEP.Secondary.IronFOV = 95
-SWEP.IronSightsPos     = Vector(-2.175, -0.0, 2.15)
+SWEP.Secondary.IronFOV = 80
+SWEP.IronSightsPos     = Vector(-2.17, -1.5, 2.15)
 SWEP.IronSightsAng     = Vector(0, -0.2, 0)
 SWEP.IronSightTime     = 0.125 
 

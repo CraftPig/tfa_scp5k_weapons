@@ -7,7 +7,7 @@ SWEP.AdminSpawnable		= true
 
 --------------------------------------------------- Viewmodel
 SWEP.ViewModel			    = "models/weapons/tfa_scp5k/m9a3/v_m9a3.mdl" 
-SWEP.ViewModelFOV			= 75		         -- This controls how big the viewmodel looks.  Less is more.
+SWEP.ViewModelFOV			= 85		         -- This controls how big the viewmodel looks.  Less is more.
 SWEP.ViewModelFlip			= false		         -- Set this to true for CSS models, or false for everything else (with a righthanded viewmodel.)
 SWEP.UseHands               = true               --Use gmod c_arms system.
 SWEP.VMPos                  = Vector(-2.5, -3, 0.5)    --The viewmodel positional offset, constantly.  Subtract this from any other modifications to viewmodel position.
@@ -69,7 +69,7 @@ SWEP.Purpose			= ""
 SWEP.Instructions		= "" 
 
 SWEP.DrawCrosshair		= true	
-SWEP.DrawCrosshairIS	= false 
+SWEP.DrawCrosshairIS	= true 
 
 SWEP.Slot				= 1			             -- Slot in the weapon selection menu.  Subtract 1, as this starts at 0.
 SWEP.SlotPos			= 40		             -- Position in the slot
@@ -120,10 +120,10 @@ SWEP.Primary.RangeFalloff          = 0.25           -- Set to 0.8, for example, 
 SWEP.MaxPenetrationCounter         = 3           --The maximum number of ricochets.  To prevent stack overflows.
  
 -------------------------- Recoil
-SWEP.Primary.KickUp                              = 0.035 -- This is the maximum upwards recoil (rise)
+SWEP.Primary.KickUp                              = 0.03 -- This is the maximum upwards recoil (rise)
 SWEP.Primary.KickDown                            = 0.05 -- This is the maximum downwards recoil (skeet)
-SWEP.Primary.KickHorizontal                      = 0.025 -- This is the maximum sideways recoil (no real term)
-SWEP.Primary.StaticRecoilFactor                  = .075 --Amount of recoil to directly apply to EyeAngles.  Enter what fraction or percentage (in decimal form) you want.  This is also affected by a convar that defaults to 0.5.
+SWEP.Primary.KickHorizontal                      = 0.02 -- This is the maximum sideways recoil (no real term)
+SWEP.Primary.StaticRecoilFactor                  = .2 --Amount of recoil to directly apply to EyeAngles.  Enter what fraction or percentage (in decimal form) you want.  This is also affected by a convar that defaults to 0.5.
 
 SWEP.IronRecoilMultiplier                        = 0.9        --Multiply recoil by this factor when we're in ironsights.  This is proportional, not inversely.
 SWEP.CrouchAccuracyMultiplier                    = 0.8         --Less is more.  Accuracy * 0.5 = Twice as accurate, Accuracy * 0.1 = Ten times as accurate
@@ -143,10 +143,10 @@ SWEP.ViewModelPunchYawMultiplier_IronSights      = 1 -- Default value is 1.5
 
 -------------------------- Spread
 SWEP.Primary.Spread                              = 0.01 --This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
-SWEP.Primary.IronAccuracy                        = .002 -- Ironsight accuracy, should be the same for shotguns
+SWEP.Primary.IronAccuracy                        = .004 -- Ironsight accuracy, should be the same for shotguns
 SWEP.Primary.SpreadMultiplierMax                 = 5 --How far the spread can expand when you shoot. Example val: 2.5
-SWEP.Primary.SpreadIncrement                     = 0.3 --What percentage of the modifier is added on, per shot.  Example val: 1/3.5
-SWEP.Primary.SpreadRecovery                      = 2 --How much the spread recovers, per second. Example val: 3
+SWEP.Primary.SpreadIncrement                     = 0.75 --What percentage of the modifier is added on, per shot.  Example val: 1/3.5
+SWEP.Primary.SpreadRecovery                      = 3 --How much the spread recovers, per second. Example val: 3
 
 -------------------------- Handling
 SWEP.MoveSpeed                     = 1 --Multiply the player's movespeed by this.

@@ -7,7 +7,7 @@ SWEP.AdminSpawnable		= true
 
 --------------------------------------------------- Viewmodel
 SWEP.ViewModel			    = "models/weapons/tfa_scp5k/p90/v_p90.mdl" 
-SWEP.ViewModelFOV			= 65		         -- This controls how big the viewmodel looks.  Less is more.
+SWEP.ViewModelFOV			= 75		         -- This controls how big the viewmodel looks.  Less is more.
 SWEP.ViewModelFlip			= false		         -- Set this to true for CSS models, or false for everything else (with a righthanded viewmodel.)
 SWEP.UseHands               = true               --Use gmod c_arms system.
 SWEP.VMPos                  = Vector(0.05, -0.5, 1.85)    --The viewmodel positional offset, constantly.  Subtract this from any other modifications to viewmodel position.

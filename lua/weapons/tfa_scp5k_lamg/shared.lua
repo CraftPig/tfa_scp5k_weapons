@@ -212,11 +212,11 @@ SWEP.EventTable = {
 		{time = 520 / 60, type = "sound", value = Sound("Weapon_LAMG_CoverDown")},
 	},
 	[ACT_VM_MISSCENTER] = {
-		{time = 0 / 60, type = "sound", value = Sound("Weapon_MK18_MagCheckOut")},
+		{time = 0 / 60, type = "sound", value = Sound("Weapon_LAMG_MagCheckOut")},
 		
 	},
 	[ACT_VM_MISSCENTER2] = {
-		{time = 35 / 60, type = "sound", value = Sound("Weapon_MK18_MagCheckIn")},
+		{time = 11 / 60, type = "sound", value = Sound("Weapon_LAMG_MagCheckIn")},
 		
 	},
 }
