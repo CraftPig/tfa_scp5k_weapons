@@ -69,7 +69,7 @@ SWEP.Purpose			= ""
 SWEP.Instructions		= "" 
 
 SWEP.DrawCrosshair		= true	
-SWEP.DrawCrosshairIS	= true 
+SWEP.DrawCrosshairIS	= false 
 
 SWEP.Slot				= 1			             -- Slot in the weapon selection menu.  Subtract 1, as this starts at 0.
 SWEP.SlotPos			= 40		             -- Position in the slot
