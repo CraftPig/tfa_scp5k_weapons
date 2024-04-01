@@ -1,5 +1,5 @@
 # tfa_scp5k_weapons
- TFA Weapon pack from SCP: 5K ported to Gmod.
+A GMod addon that includes SCP: 5K weapons, ported to the TFA Base
 
 Refer to the releases page for builds that have been published on the workshop
 
